@@ -1,0 +1,267 @@
+.grid-cat{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: 50px repeat(8, 210px);
+    justify-content: center;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "tit tit tit tit"
+    "musculacion musculacion en-casa en-casa"
+    "musculacion musculacion en-casa en-casa"
+    "musculacion musculacion en-casa en-casa"
+    "yoga yoga estiramiento estiramiento"
+    "yoga yoga estiramiento estiramiento"
+    "yoga yoga estiramiento estiramiento"
+    ". alto-impacto alto-impacto ."
+    ". alto-impacto alto-impacto ."
+    ". alto-impacto alto-impacto .";
+    
+    .tit{
+        grid-area: tit;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .musculacion{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(4, 150px);
+        gap: 0px 0px;
+        grid-template-areas: 
+        ". tit-int ."
+        "video video texto"
+        "video video texto"
+        "video video texto";
+        grid-area: musculacion;
+        .tit-int{
+            grid-area: tit-int;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+        .video{
+            grid-area: video;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .texto{
+            grid-area: texto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+    .en-casa{
+      
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(4, 150px);
+        gap: 0px 0px;
+        grid-template-areas: 
+        "tit-casa tit-casa tit-casa"
+        "imagen-casa imagen-casa text-casa"
+        "imagen-casa imagen-casa text-casa"
+        "imagen-casa imagen-casa text-casa"; 
+      grid-area: en-casa; 
+      .tit-casa{
+          grid-area: tit-casa;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+      }
+      .imagen-casa{
+          grid-area: imagen-casa;
+          display: flex;
+          justify-content: center;
+          
+      }
+      .text-casa{
+          grid-area: text-casa;
+          justify-content: center;
+          align-items: center;
+          
+      }
+    }
+    .yoga{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(4, 150px);
+        gap: 0px 0px;
+        grid-template-areas: 
+        "tit-yoga tit-yoga tit-yoga"
+        "imagen-yoga imagen-yoga text-yoga"
+        "imagen-yoga imagen-yoga text-yoga"
+        "imagen-yoga imagen-yoga text-yoga";
+        grid-area: yoga;
+        .tit-yoga{
+            grid-area: tit-yoga;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imagen-yoga{
+            grid-area: imagen-yoga;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-yoga{
+            grid-area: text-yoga;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .estiramiento{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(4, 150px);
+        gap: 0px 0px;
+        grid-template-areas: 
+        "tit-estira tit-estira tit-estira"
+        "imagen-estira imagen-estira text-estira"
+        "imagen-estira imagen-estira text-estira"
+        "imagen-estira imagen-estira text-estira";
+        grid-area: estiramiento;
+        .tit-estira{
+            grid-area: tit-estira;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .imagen-estira{
+            grid-area: imagen-estira;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-estira{
+            grid-area: text-estira;
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+    }
+    .alto-impacto{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(4,150px);
+        gap: 0px 0px;
+        grid-template-areas: 
+        "tit-imp tit-imp tit-imp"
+        "imagen-imp imagen-imp text-imp"
+        "imagen-imp imagen-imp text-imp"
+        "imagen-imp imagen-imp text-imp";
+        grid-area: alto-impacto;
+        .tit-imp{
+            grid-area: tit-imp;
+            display: flex;
+            justify-content: space-around;
+        }
+        .imagen-imp{
+            grid-area: imagen-imp;
+            display: flex;
+            justify-content: space-around;
+        }
+        .text-imp{
+            grid-area: text-imp;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+video{
+    height: 100%;
+    border-radius: 20px;
+    
+}
+video:hover{
+    border: 2px solid #fee140;
+}
+.imagen{
+    
+    border-radius: 20px;
+ }
+ .imagen-tam{
+     height: 400px;
+ }
+
+ @media (max-width:609px){
+    
+    .grid-cat{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 0px 0px;
+        grid-template-areas: 
+        "tit tit"
+        "musculacion musculacion"
+        "musculacion musculacion"
+        "musculacion musculacion"
+        "yoga yoga"
+        "yoga yoga"
+        "yoga yoga"
+        "alto-impacto alto-impacto"
+        "alto-impacto alto-impacto"
+        "alto-impacto alto-impacto";
+        
+        .musculacion{
+            
+            grid-template-areas: 
+        ". tit-int ."
+        "video video ."
+        "video video ."
+        "video video .";
+        .texto{
+            display: none;
+        }
+        }
+        .yoga{
+            
+            grid-template-areas: 
+        ". tit-yoga ."
+        "imagen-yoga imagen-yoga ."
+        "imagen-yoga imagen-yoga ."
+        "imagen-yoga imagen-yoga .";
+        .text-yoga{
+            display: none;
+            }
+        }
+        .alto-impacto{
+            
+            grid-template-areas: 
+            ". tit-imp ."
+            "imagen-imp imagen-imp ."
+            "imagen-imp imagen-imp ."
+            "imagen-imp imagen-imp ."; 
+            .text-imp{
+                display: none;
+            }
+        }
+        .en-casa{
+            display: none;
+            .text-casa{
+                display: none;
+            }
+        }
+        .estiramiento{
+            display: none;
+            .text-estira{
+                display: none;
+            }
+        }
+    }
+    
+
+    
+}
+

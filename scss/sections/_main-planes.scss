@@ -1,0 +1,23 @@
+.div-video{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    padding: 40px;
+    
+}
+
+.listas{
+    flex-direction: column;
+    padding: 15px;
+    color: $naranja-oscuro;
+}
+
+@media (max-width:609px){
+    
+    .listas{
+        align-items: center;
+    }
+   
+}
