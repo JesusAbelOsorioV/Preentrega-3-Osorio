@@ -15,7 +15,9 @@
 }
 
 @media (max-width:609px){
-    
+    .div-video{
+        display: none;
+    }
     .listas{
         align-items: center;
     }
