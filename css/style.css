@@ -76,7 +76,7 @@ li a:hover {
     position: absolute;
     width: 50%;
     /* margin-right: -50%; */
-    margin-top: -70%;
+    margin-top: -110%;
     transition: all 0.3s; }
   .menu ul {
     padding-top: 55px;
@@ -324,26 +324,31 @@ video:hover {
   height: 500px;
   padding: 40px; }
 
-.listas {
+.div-lista {
+  display: flex;
   flex-direction: column;
-  padding: 15px;
-  color: #FFA132; }
+  align-items: center; }
+  .div-lista .listas {
+    flex-direction: column;
+    padding: 15px;
+    color: #FFA132; }
 
 @media (max-width: 609px) {
   .div-video {
+    display: none; } }
+
+.card {
+  width: 18rem;
+  background-color: #000;
+  border: 2px #FFA132 solid; }
+
+@media (max-width: 609px) {
+  #carouselExample {
     display: none; }
-  .listas {
-    align-items: center; } }
-
-.div-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 400px; }
-
-.coach {
-  height: 150px; }
+  .carousel-control-prev {
+    display: none; }
+  .carousel-control-next {
+    display: none; } }
 
 form {
   display: flex;
@@ -357,5 +362,5 @@ form {
     border-radius: 7px;
     background-color: aliceblue;
     border: 2px solid #FFA132;
-    width: 450px;
+    width: 320px;
     height: 30px; }

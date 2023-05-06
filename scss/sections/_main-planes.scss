@@ -7,19 +7,21 @@
     padding: 40px;
     
 }
-
-.listas{
+.div-lista{
+    display: flex;
     flex-direction: column;
-    padding: 15px;
-    color: $naranja-oscuro;
+    align-items: center;
+    .listas{
+        flex-direction: column;
+        padding: 15px;
+        color: $naranja-oscuro;
+    }
 }
+
 
 @media (max-width:609px){
     .div-video{
         display: none;
     }
-    .listas{
-        align-items: center;
-    }
-   
+       
 }
